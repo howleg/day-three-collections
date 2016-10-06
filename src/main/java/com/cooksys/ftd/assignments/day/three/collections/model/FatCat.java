@@ -1,19 +1,15 @@
 package com.cooksys.ftd.assignments.day.three.collections.model;
 
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 public class FatCat implements Capitalist {
 
-    private String name;
-    private int salary;
-    private FatCat owner;
-
     public FatCat(String name, int salary) {
-        this(name, salary, null);
+        throw new NotImplementedException();
     }
 
     public FatCat(String name, int salary, FatCat owner) {
-        this.name = name;
-        this.salary = salary;
-        this.owner = owner;
+        throw new NotImplementedException();
     }
 
     /**
@@ -21,7 +17,7 @@ public class FatCat implements Capitalist {
      */
     @Override
     public String getName() {
-        return name;
+        throw new NotImplementedException();
     }
 
     /**
@@ -29,7 +25,7 @@ public class FatCat implements Capitalist {
      */
     @Override
     public int getSalary() {
-        return salary;
+        throw new NotImplementedException();
     }
 
     /**
@@ -37,7 +33,7 @@ public class FatCat implements Capitalist {
      */
     @Override
     public boolean hasParent() {
-        return owner != null;
+        throw new NotImplementedException();
     }
 
     /**
@@ -45,36 +41,6 @@ public class FatCat implements Capitalist {
      */
     @Override
     public FatCat getParent() {
-        return owner;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        FatCat fatCat = (FatCat) o;
-
-        if (salary != fatCat.salary) return false;
-        if (name != null ? !name.equals(fatCat.name) : fatCat.name != null) return false;
-        return owner != null ? owner.equals(fatCat.owner) : fatCat.owner == null;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + salary;
-        result = 31 * result + (owner != null ? owner.hashCode() : 0);
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        return "FatCat{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                ", owner=" + owner +
-                '}';
+        throw new NotImplementedException();
     }
 }
