@@ -22,7 +22,7 @@ public class MegaCorpProperties {
 
     @Property
     public void addNull(@Corp MegaCorp corp) {
-        assertFalse("#add() returned true when called with null", corp.add(null));
+        assertFalse("#add() returned true when called with nullf", corp.add(null));
     }
 
     @Property
